@@ -19,10 +19,11 @@ test('renders without errors', ()=>{
 });
 
 
-test('renders Loading component when prop show is null', () => {});
+test('renders Loading component when prop show is null', () => {
     render(<Show show= {null} selectedSeason = 'none'/>);
     const loading = screen.queryByTestId('loading-container');
-    expect(loading).toBeInTheDocument()
+    expect(loading).toBeInTheDocument();
+});
 
 
 test('renders same number of options seasons are passed in', ()=>{});
